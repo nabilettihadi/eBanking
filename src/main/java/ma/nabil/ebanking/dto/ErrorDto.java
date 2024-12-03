@@ -1,6 +1,7 @@
 package ma.nabil.ebanking.dto;
 
 import lombok.Data;
+
 import java.time.LocalDateTime;
 
 @Data
