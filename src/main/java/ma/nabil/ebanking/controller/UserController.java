@@ -52,4 +52,24 @@ public class UserController {
         User user = userService.changePassword(username, passwordChangeDto);
         return ResponseEntity.ok(user);
     }
+
+    @GetMapping("/myLoans")
+    public ResponseEntity<String> getMyLoans() {
+        return ResponseEntity.ok("Informations sur les prêts de l'utilisateur connecté");
+    }
+
+    @GetMapping("/myCards")
+    public ResponseEntity<String> getMyCards() {
+        return ResponseEntity.ok("Informations sur les cartes bancaires de l'utilisateur connecté");
+    }
+
+    @GetMapping("/myAccount")
+    public ResponseEntity<String> getMyAccount() {
+        return ResponseEntity.ok("Informations sur le compte de l'utilisateur connecté");
+    }
+
+    @GetMapping("/myBalance")
+    public ResponseEntity<String> getMyBalance() {
+        return ResponseEntity.ok("Solde global des comptes de l'utilisateur connecté");
+    }
 }
